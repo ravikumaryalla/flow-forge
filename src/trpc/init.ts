@@ -7,6 +7,6 @@ export const createTRPCContext = cache(async () => {
 
 const t = initTRPC.create({});
 
-export const creteTRPCRouter = t.router;
+export const createTRPCRouter = t.router;
 export const baseProcedure = t.procedure;
 export const createCallerFactory = t.createCallerFactory;
