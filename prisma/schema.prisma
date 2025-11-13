@@ -1,0 +1,18 @@
+
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://neondb_owner:npg_BlhSuvqCL08D@ep-wandering-snow-ahiaf039-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+}
+
+model User{
+  id Int @id @default(autoincrement())
+  name String
+  email String @unique
+
+}
